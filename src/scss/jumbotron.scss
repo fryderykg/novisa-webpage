@@ -1,0 +1,49 @@
+@import "typography";
+@import "variables";
+
+.jumbotron {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 60%, rgb(0, 0, 0) 110%), url("../images/jumbotron.jpg") center/cover;
+  font-family: $fontMain;
+  min-height: 920px;
+  padding-top: 128px;
+  .well {
+    border-radius: 0;
+    height: 296px;
+    margin-top: 200px;
+    padding: 40px 30px;
+    width: 382px;
+    h2 {
+      font-size: 48px;
+      line-height: .7;
+      margin: 0;
+    }
+    small {
+      color: rgb(0, 0, 0);
+      font-size: 24px;
+      line-height: 2;
+    }
+    p {
+      color: rgba(0, 0, 0, .5);
+      font-size: 18px;
+    }
+  }
+  .links {
+    background: #FFFFFF;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 150px;
+    .link {
+      border-right: 1px solid rgba(0, 0, 0, .1);
+      border-top: 1px solid rgba(0, 0, 0, .1);
+      color: #000000;
+      padding: 20px 25px;
+      p {
+        font-size: 14px;
+      }
+    }
+    .active {
+      background: $colorBlue;
+      color: #FFFFFF;
+    }
+  }
+}

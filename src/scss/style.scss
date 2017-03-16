@@ -1,6 +1,7 @@
 @import "typography";
 @import "navbar";
 @import "variables";
+@import "jumbotron";
 
 * {
   box-sizing: border-box;
@@ -8,10 +9,17 @@
 
 body {
   margin: 0;
-  background: grey;
+  //background: grey;
 }
 
+.btn {
+  background: $colorBlue;
+  border-radius: 0;
+  border: none;
+}
 
-a {
-
+.contactUsRibbon {
+  position: fixed;
+  right: 0;
+  top: 30vh;
 }
