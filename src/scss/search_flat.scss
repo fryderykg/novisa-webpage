@@ -1,0 +1,23 @@
+@import "typography";
+@import "variables";
+
+.search-flat {
+  height: 600px;
+
+  h2 {
+    font-size: 20px;
+    line-height: 30px;
+    font-family: $fontMain;
+  }
+  p {
+    font-size: 16px;
+    font-family: $fontSecondary;
+    line-height: 22px;
+    color: $colorGrey;
+  }
+
+  .btn {
+    margin-top: 23px;
+    padding: 8px 12px;
+  }
+}

@@ -81,6 +81,58 @@
     </div>
   </section>
 
+  <section class="search-flat">
+    <div class="container">
+      <h2>Twój nowy dom</h2>
+      <p>Skorzystaj z wyszukiwarki a błyskawicznie znajdziesz nowe mieszkanie w Warszawie idealnie dopasowane do Twoich potrzeb.</p>
+      <form class="row">
+        <div class="col-md-10">
+          <div class="row">
+            <div class="form-group col-md-3">
+              <label for="localisation">Lokalizacja</label>
+              <select class="form-control" name="localisation" id="localisation">
+                <option value="all" selected>Wszystkie inwestycje</option>
+                <option value="1">Lokalizacja 1</option>
+                <option value="2">Lokalizacja 2</option>
+                <option value="3">Lokalizacja 3</option>
+              </select>
+            </div>
+            <div class="form-group col-md-3">
+              <label for="localisation">Metraż</label>
+              <select class="form-control" name="area" id="area">
+                <option value="lt_40" selected>do 40m2</option>
+                <option value="40_60">40 - 60 m2</option>
+                <option value="60_80">60 - 80m2</option>
+                <option value="gt_80">powwyżej 80m2</option>
+              </select>
+            </div>
+            <div class="form-group col-md-3">
+              <label for="price">Cena</label>
+              <select class="form-control" name="price" id="price">
+                <option value="null" disabled selected>Zakres cen</option>
+                <option value="150_250">150000 - 250000</option>
+                <option value="250_350">250000 - 350000</option>
+                <option value="gt_350">powyżej 350000</option>
+              </select>
+            </div>
+            <div class="form-group col-md-3">
+              <label for="Rooms_number">Liczba pokoi</label>
+              <select class="form-control" name="rooms_number" id="rooms_number">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <button type="submit" class="btn btn-primary btn-block">Znajdź</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
   <!-- jQuery -->
   <script
           src="https://code.jquery.com/jquery-3.1.1.min.js"
