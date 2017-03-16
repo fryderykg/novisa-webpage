@@ -24,3 +24,9 @@ body {
   right: 0;
   top: 30vh;
 }
+
+hr {
+  border: none;
+  height: 1px;
+  background: $colorGreyLines;
+}

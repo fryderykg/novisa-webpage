@@ -2,22 +2,71 @@
 @import "variables";
 
 .search-flat {
-  height: 600px;
-
+  form {
+    padding-bottom: 10px;
+  }
   h2 {
+    font-family: $fontMain;
     font-size: 20px;
     line-height: 30px;
-    font-family: $fontMain;
   }
   p {
-    font-size: 16px;
-    font-family: $fontSecondary;
-    line-height: 22px;
     color: $colorGrey;
+    font-family: $fontSecondary;
+    font-size: 16px;
+    line-height: 22px;
   }
 
-  .btn {
+  .btn-search {
     margin-top: 23px;
     padding: 8px 12px;
+  }
+
+  .btn-ask-offer {
+    background: rgb(255, 255, 255);
+    border: 1px solid $colorBlue;
+    border-radius: 5px;
+    height: 40px;
+    width: 160px;
+    &:hover {
+      color: rgb(255, 255, 255);
+      background: $colorBlue;
+      font-weight: 600;
+    }
+  }
+
+  table {
+    text-align: center;
+    th, td {
+      font-size: 15px;
+      height: 50px;
+    }
+    thead {
+      background: $colorTableHeader;
+      color: rgb(255, 255, 255);
+      tr {
+        th {
+          border: none;
+          line-height: 50px;
+          text-align: center;
+        }
+      }
+    }
+    tbody {
+      tr {
+        &:nth-of-type(2n) {
+          background: $colorTableStripe;
+        }
+        td {
+          line-height: 50px;
+          border-color: #eceeef;
+        }
+      }
+    }
+    a {
+      cursor: pointer;
+      color: $colorBlue;
+      font-weight: 600;
+    }
   }
 }
