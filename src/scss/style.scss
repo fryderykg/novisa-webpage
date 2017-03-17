@@ -5,6 +5,7 @@
 @import "search_flat";
 @import "promo";
 @import "realization";
+@import "contact";
 
 * {
   box-sizing: border-box;
@@ -26,6 +27,7 @@ body {
   position: fixed;
   right: 0;
   top: 30vh;
+  z-index: 10;
 }
 
 hr {

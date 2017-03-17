@@ -1,0 +1,37 @@
+@import "variables";
+@import "typography";
+
+.contact {
+  background: $colorBlue;
+  color: rgb(255, 255, 255);
+  min-height: 230px;
+  .phone,
+  .envelope {
+    padding: 45px;
+    @media (max-width: 990px) {
+      text-align: center;
+    }
+  }
+  .phone {
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      background: rgba(255, 255, 255, .3);
+      position: absolute;
+      @media (min-width: 991px) {
+        left: 0;
+        top: 35px;
+        height: 161px;
+        width: 1px;
+      }
+      @media (max-width: 990px) {
+        height: 1px;
+        width: 320px;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+    }
+  }
+}
