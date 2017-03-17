@@ -6,6 +6,7 @@
 @import "promo";
 @import "realization";
 @import "contact";
+@import "footer";
 
 * {
   box-sizing: border-box;
@@ -16,14 +17,24 @@ body {
   //background: grey;
 }
 
+h1, h2, h3 {
+  font-family: $fontMain;
+}
+
+p {
+  font-family: $fontSecondary;
+}
+
 .btn {
   background: $colorBlue;
   border-radius: 0;
   border: none;
+  font-family: $fontMain;
   font-size: 15px;
 }
 
 .contactUsRibbon {
+  font-family: $fontMain;
   position: fixed;
   right: 0;
   top: 30vh;
