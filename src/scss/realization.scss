@@ -1,0 +1,45 @@
+@import "variables";
+
+.realizations {
+  text-align: center;
+  h2 {
+    font-size: 36px;
+    margin-top: 100px;
+  }
+  p {
+    color: $colorGrey;
+    font-size: 16px;
+    margin-bottom: 50px;
+    margin-top: 34px;
+    padding: 0 80px;
+  }
+  .well {
+    background: rgb(255, 255, 255);
+    height: 550px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    img {
+      width: 100%;
+    }
+    h2 {
+      color: $colorBlue;
+      font-size: 24px;
+      padding: 20px 20px 0;
+    }
+    p {
+      color: $colorGreyDark;
+      font-size: 15px;
+      padding: 0 20px;
+      text-align: left;
+    }
+    .btn {
+      bottom: 30px;
+      left: 5%;
+      position: absolute;
+      width: 90%;
+    }
+  }
+}
