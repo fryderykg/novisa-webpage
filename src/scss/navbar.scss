@@ -3,13 +3,24 @@
 .header_inner {
   margin-top: 36px;
   text-align: right;
-  span {
-    margin: 0 13px;
+  transition: margin-top .5s ease;
+  @media (max-width: 576px) {
+    //margin-top: 10px;
   }
   a {
-    margin: 0 7px;
+    text-align: right;
     color: $colorBlue;
     font-weight: 600;
+  }
+  .social-icons {
+    a {
+      margin-right: 10px;
+    }
+  }
+  .col-xs-0 {
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 }
 
@@ -19,9 +30,9 @@
   color: #FFFFFF;
   border-bottom: 1px solid rgba(255, 255, 255, .1);
   padding-bottom: 20px;
+  transition: all .5s ease;
   .navbar-brand {
     padding-top: 0;
-    //padding-left: 0;
   }
   .navbar-nav {
     li {
@@ -39,9 +50,6 @@
 // To collapse at 990px
 
 @media (max-width: 990px) {
-  .container {
-    width: 100vw !important;
-  }
   .navbar-header {
     float: none;
   }

@@ -17,15 +17,19 @@
   <header>
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
-        <div class="header_inner">
-          <span>Napisz do nas: <a href="mailto:sprzedaz@novisa.pl">sprzedaz@novisa.pl</a></span>
-          <span>Zadzwoń: <span class="colorTextBlue textBold">+48 (22) 545 70 20</span></span>
-          <a href="#"><img src="images/facebook.png" alt="facebook logo"></a>
-          <a href="#"><img src="images/youtube.png" alt="youtube logo"></a>
+        <div class="header_inner row">
+          <span class="col-xs-12 col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-4">Napisz do nas:
+            <a href="mailto:sprzedaz@novisa.pl">sprzedaz@novisa.pl</a></span>
+          <span class="col-xs-12 col-sm-4 col-md-3">Zadzwoń:
+            <span class="colorTextBlue textBold">+48 (22) 545 70 20</span></span>
+          <span class="col-xs-0 col-sm-2 col-md-2 social-icons">
+            <a href="#"><img src="images/facebook.png" alt="facebook logo"></a>
+            <a href="#"><img src="images/youtube.png" alt="youtube logo"></a>
+          </span>
         </div>
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" id="navbar-button">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -42,19 +46,19 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">O nas</a></li>
-            <li><a href="#">Oferta</a></li>
-            <li><a href="#">Wyszukaj Mieszkanie</a></li>
-            <li><a href="#">Doradztwo Kredytowe</a></li>
-            <li><a href="#">MdM</a></li>
-            <li><a href="#">Kontakt</a></li>
+            <li><a href="#about_us" class="menu">O nas</a></li>
+            <li><a href="#offer" class="menu">Oferta</a></li>
+            <li><a href="#search_flat" class="menu">Wyszukaj Mieszkanie</a></li>
+            <li><a href="#credit" class="menu">Doradztwo Kredytowe</a></li>
+            <li><a href="#mdm" class="menu">MdM</a></li>
+            <li><a href="#contact" class="menu">Kontakt</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
   </header>
 
-  <section class="jumbotron">
+  <section class="jumbotron" id="about_us">
     <div class="container">
       <div class="well">
         <h2>Spokojny dom <br><small>w otulinie Warszawy</small></h2>
@@ -62,7 +66,7 @@
           od centrum!</p>
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Zarezerwuj ostatnie wolne miejsca!</a></p>
       </div>
-      <div class="links row">
+      <div class="links row" id="offer">
         <a href="#">
           <div class="col-xs-12 col-sm-6 col-md-3 link active">
             <p><strong>Ostatnie wolne mieszkania</strong><br>na osiedlu Ogrody Przyjaciół II</p>
@@ -81,7 +85,7 @@
     </div>
   </section>
 
-  <section class="search-flat">
+  <section class="search-flat" id="search_flat">
     <div class="container">
       <h2>Twój nowy dom</h2>
       <p>Skorzystaj z wyszukiwarki a błyskawicznie znajdziesz nowe mieszkanie w Warszawie idealnie dopasowane do Twoich potrzeb.</p>
@@ -252,7 +256,7 @@
 
   </section>
 
-  <section class="promo">
+  <section class="promo" id="credit">
     <div class="container">
       <div class="well">
         <h2>Gotowe do zamieszkania</h2>
@@ -262,7 +266,7 @@
     </div>
   </section>
 
-  <section class="realizations">
+  <section class="realizations" id="mdm">
     <div class="container">
       <h2>Nasze realizacje</h2>
       <p>Kliknij w najciekawszą dla Ciebie inwestycję i zobacz co przygotowaliśmy. W naszej ofercie znajdziesz zarówno wygodne apartamenty w Warszawie, mieszkania w systemie MdM oraz nowe domy pod Warszawą. Sprawdź szczegóły oferty, a jeśli zostawisz nam swój adres email lub numer telefonu oddzwonimy do Ciebie w indywidualną propozycją.</p>
@@ -301,7 +305,7 @@
     </div>
   </section>
 
-  <section class="contact">
+  <section class="contact" id="contact">
     <div class="container">
       <div class="col-md-6 envelope">
         <h3><i class="fa fa-envelope-o" aria-hidden="true"></i> Zapisz się do newslettera!</h3>

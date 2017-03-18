@@ -1,33 +1,44 @@
+// Scroll certain amounts from current position
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $('a.menu').on('click', function(event) {
+    // $('a:not([data-toggle="tab"])').on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
-    if (this.hash === "#top") {
-      $('html, body').animate({
-        scrollTop: 0
-      }, 1000, function(){
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    }
-    else if (this.hash !== "") {
+    if (this.hash !== "") {
       // Prevent default anchor click behavior
       event.preventDefault();
+
       // Store hash
       var hash = this.hash;
+
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
-        scrollTop: $(hash).offset().top - 60
-      }, 1000, function(){
+        scrollTop: $(hash).offset().top -100
+      }, 800, function(){
 
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
     } // End if
-    closeNav();
+    $('button#navbar-button:not(:hidden)').click();
   });
 
+  $(window).scroll(function() {
+    var y_scroll_pos = window.pageYOffset,
+      scroll_pos_test = 150,
+      navbar = $(".navbar"),
+      header_inner = $(".header_inner");
 
-
+    if(y_scroll_pos > scroll_pos_test) {
+      navbar.css("background","rgba(0, 0, 0, 0.8)");
+      navbar.css("padding-bottom","0");
+      header_inner.css("margin-top", "10px");
+    }
+    else {
+      navbar.css("background","transparent");
+      navbar.css("padding-bottom","20px");
+      header_inner.css("margin-top", "36px");
+    }
+  });
 });
