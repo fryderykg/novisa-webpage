@@ -36,7 +36,7 @@ $(document).ready(function(){
       header_inner.css("margin-top", "10px");
     }
     else {
-      navbar.css("background","transparent");
+      navbar.css("background","rgba(0, 0, 0, 0.0)");
       navbar.css("padding-bottom","20px");
       header_inner.css("margin-top", "36px");
     }

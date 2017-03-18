@@ -4,15 +4,13 @@
   margin-top: 36px;
   text-align: right;
   transition: margin-top .5s ease;
-  @media (max-width: 576px) {
-    //margin-top: 10px;
-  }
+
   a {
     text-align: right;
     color: $colorBlue;
     font-weight: 600;
   }
-  .social-icons {
+  .icons {
     a {
       margin-right: 10px;
     }
@@ -25,7 +23,7 @@
 }
 
 .navbar {
-  background: transparent;
+  background: rgba(0, 0, 0, .0);
   border: none;
   color: #FFFFFF;
   border-bottom: 1px solid rgba(255, 255, 255, .1);
