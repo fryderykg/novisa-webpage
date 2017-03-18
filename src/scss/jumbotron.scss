@@ -6,9 +6,9 @@
   min-height: 920px;
   padding-top: 128px;
   .well {
-    height: 296px;
+    min-height: 296px;
     margin-top: 200px;
-    width: 382px;
+    max-width: 382px;
     h2 {
       font-size: 48px;
       line-height: .7;

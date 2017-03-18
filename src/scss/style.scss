@@ -15,6 +15,7 @@
 body {
   font-family: $fontSecondary;
   margin: 0;
+  overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -39,6 +40,9 @@ p {
   right: 0;
   top: 30vh;
   z-index: 10;
+  @media (max-width: 567px) {
+    display: none;
+  }
 }
 
 hr {
