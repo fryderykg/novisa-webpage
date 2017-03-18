@@ -1,5 +1,4 @@
-@import "variables";
-@import "typography";
+//FOOTER SCSS
 
 footer {
   margin-top: 20px;
@@ -39,6 +38,7 @@ footer {
     a {
       background: grey;
       height: 30px;
+      font-family: $fontSecondary;
       width: 30px;
       border-radius: 30px;
       display: block;

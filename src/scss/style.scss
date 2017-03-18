@@ -1,6 +1,6 @@
 @import "typography";
-@import "navbar";
 @import "variables";
+@import "navbar";
 @import "jumbotron";
 @import "search_flat";
 @import "promo";
@@ -13,8 +13,8 @@
 }
 
 body {
+  font-family: $fontSecondary;
   margin: 0;
-  //background: grey;
 }
 
 h1, h2, h3 {
