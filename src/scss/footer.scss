@@ -2,6 +2,9 @@
 
 footer {
   margin-top: 20px;
+  @media (max-width: 768px) {
+    text-align: center;
+  }
   img {
     margin-top: 20px;
   }
@@ -15,7 +18,8 @@ footer {
     li {
       list-style-type: none;
       a {
-        color: rgb(0, 0, 0);
+        color: $colorGreyDark;
+        font-weight: 500;
         &:hover {
           color: $colorBlue;
           text-decoration: none;
@@ -38,7 +42,6 @@ footer {
     a {
       background: grey;
       height: 30px;
-      font-family: $fontSecondary;
       width: 30px;
       border-radius: 30px;
       display: block;
@@ -70,10 +73,9 @@ footer {
   margin-top: 50px;
   margin-bottom: 30px;
   font-size: 14px;
-  font-family: $fontSecondary;
   text-align: center;
   a {
     padding: 0 5px;
-    color: rgb(0, 0, 0);
+    color: $colorGreyDark;
   };
 }
