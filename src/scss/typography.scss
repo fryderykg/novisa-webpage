@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600');
+//@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
-$fontMain: "Source Sans Pro", sans-serif;
+@font-face{
+  font-family:"Neo Sans";
+  src:url("Fonts/2959d89a-a257-4ce7-9cda-63e00f275369.eot?#iefix");
+  src:url("Fonts/2959d89a-a257-4ce7-9cda-63e00f275369.eot?#iefix") format("eot"),url("Fonts/a53085dd-4493-4430-8349-fd63d6f3e5bc.woff2") format("woff2"),url("Fonts/a32c3a17-3242-461c-a048-ca8e775582b1.woff") format("woff"),url("Fonts/97316a7d-9db1-4dc1-bd87-e24103d88a81.ttf") format("truetype"),url("Fonts/1287ca7a-3ce7-40b7-9612-061d4c793f04.svg#1287ca7a-3ce7-40b7-9612-061d4c793f04") format("svg");
+}
+
+$fontMain: "Neo Sans", sans-serif;
 $fontSecondary: "Open Sans", sans-serif;
 
 header {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: $fontMain;
 }
 
 p {
