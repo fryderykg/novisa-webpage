@@ -45,9 +45,19 @@ $(document).ready(function(){
   //Footer links on mobile
   var footer_header = $('footer h3');
 
+  //change when window is opening
   if ($(window).width()< 768) {
     footer_header.next('ul').slideToggle(250);
   }
+
+  // change on window resize
+  $(window).resize(function() {
+    if ($(window).width() < 768) {
+      footer_header.next('ul').slideUp(250);
+    } else {
+      footer_header.next('ul').slideDown(250);
+    }
+  });
 
   footer_header.click(function() {
     if ($(window).width()< 768) {

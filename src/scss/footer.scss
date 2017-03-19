@@ -2,7 +2,7 @@
 
 footer {
   margin-top: 20px;
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     text-align: center;
   }
   img {
@@ -10,7 +10,7 @@ footer {
     @media (max-width: 990px) and (min-width: 768px) {
       margin-left: -10px;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       margin-bottom: 15px;
     }
   }
@@ -19,7 +19,7 @@ footer {
     font-size: 16px;
     font-weight: 600;
     position: relative;
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       border-bottom: 1px solid $colorGreyLines;
       cursor: pointer;
       display: block;
@@ -43,11 +43,10 @@ footer {
     padding: 0;
     li {
       list-style-type: none;
-      @media (max-width: 768px) {
-        //border: 1px solid black;
-        text-align: left;
+      @media (max-width: 767px) {
         font-size: 20px;
         padding: 5px;
+        text-align: left;
       }
       a {
         color: $colorGreyDark;
