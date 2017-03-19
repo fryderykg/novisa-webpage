@@ -47,6 +47,9 @@ footer {
         font-size: 20px;
         padding: 5px;
         text-align: left;
+        p {
+          font-size: 20px;
+        }
       }
       a {
         color: $colorGreyDark;
