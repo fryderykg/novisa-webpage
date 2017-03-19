@@ -10,16 +10,45 @@ footer {
     @media (max-width: 990px) and (min-width: 768px) {
       margin-left: -10px;
     }
+    @media (max-width: 768px) {
+      margin-bottom: 15px;
+    }
   }
   h3 {
     color: $colorBlue;
     font-size: 16px;
     font-weight: 600;
+    position: relative;
+    @media (max-width: 768px) {
+      border-bottom: 1px solid $colorGreyLines;
+      cursor: pointer;
+      display: block;
+      font-size: 20px;
+      padding-bottom: 5px;
+      text-align: left;
+      &:after {
+        content: "\f105";
+        font-family: FontAwesome;
+        position: absolute;
+        right: 20px;
+      }
+      &.active {
+        &:after {
+          content: '\f107'
+        }
+      }
+    }
   }
   ul {
     padding: 0;
     li {
       list-style-type: none;
+      @media (max-width: 768px) {
+        //border: 1px solid black;
+        text-align: left;
+        font-size: 20px;
+        padding: 5px;
+      }
       a {
         color: $colorGreyDark;
         font-weight: 500;

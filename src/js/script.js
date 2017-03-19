@@ -32,13 +32,27 @@ $(document).ready(function(){
 
     if(y_scroll_pos > scroll_pos_test) {
       navbar.css("background","rgba(0, 0, 0, 0.8)");
-      navbar.css("padding-bottom","0");
+      navbar.css("padding-bottom","10px");
       header_inner.css("margin-top", "10px");
     }
     else {
       navbar.css("background","rgba(0, 0, 0, 0.0)");
       navbar.css("padding-bottom","20px");
       header_inner.css("margin-top", "36px");
+    }
+  });
+
+  //Footer links on mobile
+  var footer_header = $('footer h3');
+
+  if ($(window).width()< 768) {
+    footer_header.next('ul').slideToggle(250);
+  }
+
+  footer_header.click(function() {
+    if ($(window).width()< 768) {
+      $(this).toggleClass('active');
+      $(this).next('ul').slideToggle(250);
     }
   });
 });
